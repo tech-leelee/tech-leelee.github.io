@@ -1,0 +1,199 @@
+
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(revive-80-phatt.otf);
+}
+
+@font-face {
+  font-family: secondFont;
+  src: url(revive-80-phatt-outline.otf);
+}
+
+h1{
+  font-family: secondFont;
+}
+
+h2, h4 {
+  font-family: myFirstFont;
+}
+
+h3 {
+  font-family: 'Michroma';
+}
+
+body{
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #fff; 
+}
+
+h2:hover {
+  font-family: secondFont;
+  font-size: 35px;
+}
+
+footer{
+  text-align: center;
+  background-color: #1c0c3b;
+  padding: 10px 10px;
+}
+
+.sectionIntro {
+  margin: 0;
+  height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  border: 0;
+  height: 100%;
+  background: radial-gradient(#eb6725 25%, #220f4d);
+  background-size: 300%; 
+  animation: gradeInOut 10s ease-in-out infinite alternate;
+}
+
+@keyframes gradeInOut {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+
+.bigT {  
+  color: #fff;
+  font-size: 150px;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.intro { 
+  text-align: right;
+  margin-right: 8%;
+  color: #fff;
+  font-size: 20px;
+}
+
+
+.pageTitle {
+  color: #fff;
+  font-size: 60px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.sectionAbout {
+  background-color: #3c132b;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin: 0;
+  height: 100vh;
+}
+
+.containerAbout {
+  padding: 20px 20px 30px;
+}
+
+
+.img{
+  margin-left: 60px;
+  display: inline-block;
+}
+
+.aboutText {
+  position: absolute;
+  bottom: 50vh;
+  display: inline-block;
+  width: 60%;
+  padding-left: 45%;
+  font-size: 20px;
+}
+
+.sectionProject {
+  background-color: #3c132b;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0;
+  height: 100vh;
+}
+
+.projectTitle {
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Michroma';
+}
+
+.projectTitle:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 3px;
+  width: 0px;
+  bottom: -3px;
+}
+
+.projectTitle:hover:after {
+  width: 300px;
+}
+
+.projectBlock {
+  text-align: center;
+}
+
+.projectList {
+  display: none;
+  margin-left: 120px;
+  position: relative;
+}
+
+.projectText {
+  position: relative;
+  display: inline-block;
+  bottom: 80px;
+  left: 20px;
+  width: 50%;
+  font-size: 20px;
+}
+
+.projectImg:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+.sectionContact {
+background: radial-gradient(#eb6725 25%, #220f4d);
+padding: 20px;
+margin: 0;
+height: 100vh;
+}
+
+.contactContainer {
+  text-align: center;
+  padding: 30px 200px;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+} 
+
+
+
